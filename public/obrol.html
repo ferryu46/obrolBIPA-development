@@ -4,6 +4,22 @@
   
     <title>Ruang Bincang BIPA</title>
 <head>
+<script>
+      // Ambil URL saat ini
+let url = window.location.href;
+
+// Cari indeks posisi ekstensi ".html"
+let index = url.lastIndexOf(".html");
+
+// Jika ekstensi ditemukan, hapus ekstensi
+if (index !== -1) {
+  url = url.substring(0, index);
+}
+
+// Ubah URL saat ini ke URL baru tanpa ekstensi ".html"
+window.history.replaceState(null, null, url);
+
+</script>
     <meta content name="description">
     <meta content name="keywords">
     <!-- Favicons -->
