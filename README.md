@@ -1,4 +1,4 @@
-# obrolBIPA-development
-Ujicoba Fitur Obrol BIPA
+# Ruang Bincang BIPA-development
+Ujicoba Fitur Ruang Bincang BIPA
 
-Ujicoba Fitur Obrol BIPA yang akan dikembangkan dalam platform BIPA Daring.
+Ujicoba Fitur Ruang Bincang BIPA yang akan dikembangkan dalam platform BIPA Daring.
