@@ -18,25 +18,25 @@ if (index !== -1) {
 
 // Ubah URL saat ini ke URL baru tanpa ekstensi ".html"
 window.history.replaceState(null, null, url);
-
 </script>
-    <meta content name="description">
-    <meta content name="keywords">
-    <!-- Favicons -->
-    <link href="images/favicon.png" rel="icon">
-    <link href="images/logo_bipa.png" rel="apple-touch-icon">
-  
-    <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet">
+<meta content name="description">
+<meta content name="keywords">
 
-  <!-- Vendor CSS Files -->
+<!-- Favicons -->
+<link href="images/favicon.png" rel="icon">
+<link href="images/logo_bipa.png" rel="apple-touch-icon">
+  
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/icofont.min.css" rel="stylesheet">
     <link href="css/boxicons.min.css" rel="stylesheet">
     <link href="css/remixicon.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
+<!-- Template Main CSS File -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 <style>
@@ -51,78 +51,12 @@ window.history.replaceState(null, null, url);
 #header .logo img {
   max-height: 90px;
 }
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: 40vh;
-  background: url("images/hero-bg.jpg") top center;
-  background-size: stretch;
-  position: relative;
-}
-
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 5px;
-  left: 0;
-  right: 0;
-}
-
-#hero .container {
-  padding-top: 120px;
-}
-
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 72px;
-  }
-}
-
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-}
-
-#hero h2 {
-  color: #eee;
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero {
-    height: 45vh;
-    padding-top: 100px;
-    text-align: center;
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
 </style>
 </head>
-<body> 
+<body>
+
 <!-- ======= Header ======= -->
-    <style>
+<style>
     .iconDetails {
    margin-left:2%;
   float:left; 
@@ -148,8 +82,10 @@ window.history.replaceState(null, null, url);
             <div>
               <img src="images/logo_tut.png" alt class="iconDetails d-none d-lg-block">
               <img src="images/logo_tut.png" alt class="iconDetails d-flex d-lg-none" style="width: 90%; height: auto;">
-            </div><div style="font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left:10px; text-align: left">
-              Kementerian<br>Pendidikan, Kebudayaan, <br>Riset, dan Teknologi
+            </div>
+            <div style="font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left:10px; text-align: left; height: auto;">
+              Pusat Penguatan dan Pemberdayaan Bahasa
+            <br>Badan Pengembangan dan Pembinaan Bahasa
               </div>
             </div>
             </div>
@@ -171,53 +107,59 @@ window.history.replaceState(null, null, url);
     </header><!-- End Header -->
 
 <!-- Projects -->
-<section id="projects">
-  <div class="container">
-      <div class="row text-center mb-3">
-          <div class="col">
-              <h2>Ruang Bincang BIPA</h2>
+<section id="projects" class="mt-5">
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <!-- Card pertama -->
+      <div class="col">
+        <article class="h-100">
+          <div class="card h-100">
+            <div class="card-body text-justify d-flex flex-column">
+              <h5 class="card-title">Ruang Bincang BIPA (Video)</h5>
+              <p class="card-text">Ruang Bincang BIPA memanfaatkan integrasi Google Classroom dan Google Meet yang sudah dikenal luas. Pastikan Anda sudah didaftarkan oleh pengajar BIPA di kelas Anda.</p>
+              <a href="#" class="btn btn-success mt-auto">Menuju Ruang Bincang BIPA (Video)</a>
+            </div>
           </div>
+        </article>
       </div>
-      <div class="row">
-          <div class="col-md-4 mb-3">
-              <div class="card">
-                  <img src="img/projects/1.png" class="card-img-top" alt="Project 1">
-              <div class="card-body">
-                  <h5 class="card-title">Ruang Bincang BIPA (Video)</h5>
-                      <p class="card-text">Ruang Bincang BIPA memanfaatkan integrasi Google Classroom dan Google Meet yang terintegrasi. Pastikan Anda sudah mendapatkan akun dari pengajar BIPA di kelas Anda.</p>
-                          <a href="https://classroom.google.com/c/NjEzNDU0MTIzMzM0" class="btn btn-primary">Menuju Ruang Bincang (Video)</a>
-              </div>
+      
+      <!-- Card kedua -->
+      <div class="col">
+        <article class="h-100">
+          <div class="card h-100">
+            <div class="card-body text-justify d-flex flex-column">
+              <h5 class="card-title">Rekan Bincang BIPA (Teks)</h5>
+              <p class="card-text">Rekan Bincang BIPA merupakan asisten virtual berbasis teks bagi pemelajar BIPA yang dikembangkan untuk melatih kemahiran pemelajar secara mandiri berbasis teks. Pastikan Anda sudah mendapatkan akun dari pengajar BIPA Anda.</p>
+              <a href="#" class="btn btn-danger mt-auto">Dalam Perbaikan</a>
+            </div>
           </div>
+        </article>
       </div>
-          <div class="col-md-4 mb-3">
-              <div class="card">
-                  <img src="img/projects/2.png" class="card-img-top" alt="Project 2">
-              <div class="card-body">
-                  <h5 class="card-title">Rekan Bincang BIPA (Teks) </h5>
-                  <p class="card-text">Rekan Bincang BIPA merupakan asisten virtual berbasis teks bagi pemelajar BIPA yang dikembangkan untuk melatih kemahiran pemelajar secara mandiri berbasis teks. Pastikan Anda sudah mendapatkan akun dari pengajar BIPA Anda.</p>
-                  <a href="#" class="btn btn-primary">Dalam Pengembangan</a>
-              </div>
+      
+      <!-- Card ketiga -->
+      <div class="col">
+        <article class="h-100">
+          <div class="card h-100">
+            <div class="card-body text-justify d-flex flex-column">
+              <h5 class="card-title">Teratur BIPA</h5>
+              <p class="card-text">Teratur BIPA (Mitra Tutur BIPA) adalah proyek pengembangan asisten virtual bagi pemelajar BIPA. Pemelajar BIPA dapat menggunakan asisten virtual ini sebagai mitra tutur untuk melatih kemahiran berbicara.</p>
+              <a href="#" class="btn btn-danger mt-auto">Dalam Perbaikan</a>
+            </div>
           </div>
+        </article>
       </div>
-          <div class="col-md-4 mb-3">
-              <div class="card">
-                  <img src="img/projects/3.png" class="card-img-top" alt="Project 3">
-              <div class="card-body">
-                  <h5 class="card-title">Teratur BIPA</h5>
-                  <p class="card-text">Mitra Tutur BIPA (Teratur BIPA) adalah proyek pengembangan asisten virtual bagi pemelajar BIPA. Pemelajar BIPA dapat menggunakan asisten virtual ini sebagai mitra tutur untuk melatih kemahiran berbicara.</p>
-                  <a href="#" class="btn btn-primary">Dalam Pengembangan</a>
-              </div>
-          </div>
-      </div>
-      </div>
+    </div>
   </div>
 </section>
+
+
+
   <!-- Akhir Projects -->
       <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
 
     <!-- Footer -->
     <footer class="bg-light text-dark text-center pb-2">
-      <p>Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold"> Ferry Yun Kurniawan</a></p>
+      <img src="../public/images/logo_hakcipta.png"><p>Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a></p>
   </footer>
   <!-- Akhir Footer -->
     <!-- Vendor JS Files -->
