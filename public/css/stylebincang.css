@@ -24,7 +24,14 @@ body {
   .card:hover {
     transform: translateY(-5px);
   }
-  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
   .country-selection {
     display: flex;
     flex-direction: column;
@@ -33,15 +40,19 @@ body {
     height: 100vh;
     padding-top: 20px;
   }
-
-  .country-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 800px;
-  }
   
+  .country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .country-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+
   .country-card {
     display: flex;
     flex-direction: column;
