@@ -122,7 +122,10 @@ body {
     margin-bottom: 10px;
   }
   
-
+  .hidden {
+    display: none;
+  }
+  
   /*--- End of Country Card part ---*/
 
   h1,
