@@ -32,6 +32,34 @@ body {
     min-height: 100vh;
   }
 
+/* CSS untuk animasi tulisan "Pilih Negara" */
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  #judul {
+    animation: fade-in 0.5s ease;
+  }
+  
+  /* CSS untuk animasi card */
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   .country-selection {
     display: flex;
     flex-direction: column;
@@ -62,8 +90,25 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: scale-in 0.5s ease;
+    animation-delay: 0.5s; /* Delay untuk card */
   }
   
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+
+/* Animasi saat hover melintas pada card yang ingin dipilih pemelajar */
+.country-card.selected {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  
+  .country-card.selected:hover {
+    transform: scale(1.1) rotate(3deg);
+  }
+
   .country-card img {
     width: 50px;
     height: 50px;

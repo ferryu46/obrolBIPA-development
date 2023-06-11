@@ -38,9 +38,22 @@ window.history.replaceState(null, null, url);
 </head>
 <body>
 <section id="pilihruang">
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+  // Menerapkan class "show" pada tulisan "Pilih Negara" dan card
+  const judul = document.getElementById('judul');
+  judul.classList.add('show');
+
+  const cards = document.querySelectorAll('.country-card');
+  cards.forEach((card, index) => {
+    card.style.animationDelay = `${(index + 1) * 0.1 + 0.5}s`;
+    card.classList.add('show');
+  });
+});
+</script>
     <div class="container mt-2">
         <div class="country-selection mt-3">
-            <h3>Pilih Negara:</h3>
+            <h3 id="judul">Pilih Negara:</h3>
             <div class="country-grid mt-3">
                 <div class="row"> 
 
@@ -206,5 +219,5 @@ window.history.replaceState(null, null, url);
           
     </div>
 </section>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></scrip>
 </body>
