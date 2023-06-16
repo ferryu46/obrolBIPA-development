@@ -13,103 +13,103 @@
 </head>
 <body>
     <div class="container ">
-        <div class="row">
-            <div class="col-md-12" style="height: 50px;padding-top:10px;text-align: center; font-weight: bolder;">Pilih Negara Anda</div>
+        <div class="col d-inline-flex">
+            <div class="col-md-12" style="height: 50px; padding-top:10px; text-align: center; font-weight: bolder;">Pilih Negara Anda</div>
         </div>
         <div class="row">
             <div id="flag-container" class="col-md-3" >
                 <div class="card" style="text-align: center;font-weight: bolder;">Pilih Negara</div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="https://flagcdn.com/160x120/un.png">
                     <div class="flag-title">Global</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
-                    <div class="flag-title">Flag 2</div>
+                    <div class="flag-title">Afrika Selatan</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 3</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 4</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 5</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 6</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 7</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 8</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 9</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 10</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 11</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 12</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 13</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 14</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 15</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 16</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 17</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 18</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 19</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 20</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 21</div>
                 </div>
-                <div class="card" onclick="toogle()">
+                <div class="card" onclick="toggle()">
                     <img class="flag" src="flag.png">
                     <div class="flag-title">Flag 22</div>
                 </div>
             </div>
-            <div id="flag-content" class="col-md-9">
-                <div class="contents-wrapper"> Keterangan </div>
+            <div id="flag-content" class="d-print-inline-block">
+                <div class="contents-wrapper text-center font-weight-bolder"> Pilih Tingkat BIPA Anda </div>
                 <div class="contents-wrapper">
                     <div class="contents">
                         BIPA 1
@@ -168,7 +168,7 @@
   </footer>
   
   <script> 
-    function toogle() {
+    function toggle() {
         var x = document.getElementById("flag-content");
 
         if (x.style.display === "none") {
@@ -177,6 +177,6 @@
             x.style.display = "none";
         }
     }
-  </script> 
+  </script>
 </body>
 </html>
