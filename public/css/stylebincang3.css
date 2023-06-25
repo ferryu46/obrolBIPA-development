@@ -98,3 +98,7 @@
     overflow-y: auto;
     object-position: var(flag-container);
 }
+
+#footer {
+    max-height: 80%;
+}
