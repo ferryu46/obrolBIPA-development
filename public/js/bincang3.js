@@ -4,12 +4,16 @@ function toggle(event) {
 
   console.log('ID Negara: ' + flagId);
 
+  let negaraValue = document.getElementById('negara-value');
+  negaraValue.textContent = flagId;
+  
   let flagContent = document.getElementById('flag-content');
   
   if (flagContent.style.display === "none") {
     flagContent.style.display = "block";
   } else {
-    flagContent.style.display = "none";
+    [flagContent.style.display = "none",
+    ruangContent.style.display = "none"];
   }
   return flagId;
 }
@@ -19,6 +23,9 @@ function toggleRuang(event) {
     const contentId = clickedCard.id;
     
     console.log('Tingkat BIPA yang dipilih : ' + contentId);
+
+    let tingkatValue = document.getElementById('tingkat-value');
+    tingkatValue.textContent = contentId;
 
     let ruangContent = document.getElementById('ruang-content');
     if (ruangContent.style.display === "none") {
