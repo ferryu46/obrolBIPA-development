@@ -1,6 +1,6 @@
 #flag-container {
     padding: 15px;
-    width: 20%;
+    width: 40%;
     height: 600px;
     background-color: aliceblue;
     overflow-y: auto;
@@ -10,7 +10,7 @@
 
 #flag-content {
     display: none;
-    width: 55%;
+    width: 40%;
     height: 600px;
     padding: 15px;
     background-color: aliceblue;
@@ -88,8 +88,8 @@
 
 #ruang-content {
     display: none;
-    width: 55%;
-    height: 600px;
+    width: 45%;
+    height: 100%;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #f0f0f0;

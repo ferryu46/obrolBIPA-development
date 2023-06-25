@@ -1,6 +1,6 @@
 const config = {
     urlClassrooms: {
-        "Global-BIPA 1": "https://google.com",
+        "Global-BIPA 1": "https://classroom.google.com/c/NjEzNTAyNzA2MDA4",
         "Global-BIPA 2": "https://Global-BIPA-2",
         "Global-BIPA 3": "https://Global-BIPA-3",
         "Global-BIPA 4": "https://Global-BIPA-4",
