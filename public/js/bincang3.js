@@ -1,3 +1,15 @@
+function config() {
+    const urlClassroom= {
+        "Global-BIPA 1": "https://Global-BIPA-1",
+        "Global-BIPA 2": "https://Global-BIPA-2",
+        "Global-BIPA 3": "https://Global-BIPA-3",
+        "Global-BIPA 4": "https://Global-BIPA-4",
+        "Global-BIPA 5": "https://Global-BIPA-5",
+        "Global-BIPA 6": "https://Global-BIPA-6", 
+        // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain
+      }
+    };
+
 function toggle(event) {
   const clickedCard = event.currentTarget;
   const flagId = clickedCard.querySelector('.flag').id;
@@ -12,10 +24,9 @@ function toggle(event) {
   if (flagContent.style.display === "none") {
     flagContent.style.display = "block";
   } else {
-    [flagContent.style.display = "none",
-    ruangContent.style.display = "none"];
+    flagContent.style.display = "none";
   }
-  return flagId;
+  return flagId
 }
 
 function toggleRuang(event) {
@@ -33,5 +44,17 @@ function toggleRuang(event) {
     } else {
         ruangContent.style.display = "none";
     }
+
     return contentId;
    }
+
+function pilihLanjut() {
+    const negara = document.getElementById('negara-value').textContent;
+    const tingkatBIPA = document.getElementById('tingkat-value').textContent;
+    const urlClassrooms = config.urlClassrooms[`${negara}-${tingkatBIPA}`];
+}
+
+function pilihKembali() {
+    window.location.reload();
+}
+
