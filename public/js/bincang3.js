@@ -1,6 +1,7 @@
 function config() {
-    const urlClassroom= {
-        "Global-BIPA 1": "https://Global-BIPA-1",
+    return {
+    urlClassrooms: {
+        "Global-BIPA 1": "https://google.com",
         "Global-BIPA 2": "https://Global-BIPA-2",
         "Global-BIPA 3": "https://Global-BIPA-3",
         "Global-BIPA 4": "https://Global-BIPA-4",
@@ -9,6 +10,7 @@ function config() {
         // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain
       }
     };
+}
 
 function toggle(event) {
   const clickedCard = event.currentTarget;
@@ -52,6 +54,8 @@ function pilihLanjut() {
     const negara = document.getElementById('negara-value').textContent;
     const tingkatBIPA = document.getElementById('tingkat-value').textContent;
     const urlClassrooms = config.urlClassrooms[`${negara}-${tingkatBIPA}`];
+
+    window.location.href = urlClassrooms;
 }
 
 function pilihKembali() {
