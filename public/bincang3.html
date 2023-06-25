@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Ruang Bincang BIPA</title>
+    <script type="text/javascript" src="/public/js/bincang3.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
@@ -12,162 +13,143 @@
 
 </head>
 <body>
-    <div class="container ">
-        <div class="col d-inline-flex">
+    <div class="container">
+        <div class="row ">
             <div class="col-md-12" style="height: 50px; padding-top:10px; text-align: center; font-weight: bolder;">Pilih Negara Anda</div>
         </div>
         <div class="row">
-            <div id="flag-container" class="col-md-3" >
+            <div id="flag-container" class="col-md-4" >
                 <div class="card" style="text-align: center;font-weight: bolder;">Pilih Negara</div>
                 <div class="card" id="Global" onclick="toggle(event)">
                     <img id="global" class="flag" src="https://flagcdn.com/160x120/un.png">
                     <div class="flag-title font-weight-bolder">Global</div>
                 </div>
                 <div class="card" id="Afrika Selatan" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/za.png">
+                    <img id="Afrika Selatan" class="flag" src="https://flagcdn.com/160x120/za.png">
                     <div class="flag-title font-weight-bolder">Afrika Selatan</div>
                 </div>
                 <div class="card" id="Amerika Serikat" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/us.png">
+                    <img id="Amerika Serikat" class="flag" src="https://flagcdn.com/160x120/us.png">
                     <div class="flag-title font-weight-bolder">Amerika Serikat</div>
                 </div>
                 <div class="card" id="Australia" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/au.png">
+                    <img id="Australia" class="flag" src="https://flagcdn.com/160x120/au.png">
                     <div class="flag-title font-weight-bolder">Australia</div>
                 </div>
                 <div class="card" id="Austria" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/at.png">
+                    <img id="Austria" class="flag" src="https://flagcdn.com/160x120/at.png">
                     <div class="flag-title font-weight-bolder">Austria</div>
                 </div>
                 <div class="card" id="Belgia" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/be.png">
+                    <img id="Belgia" class="flag" src="https://flagcdn.com/160x120/be.png">
                     <div class="flag-title font-weight-bolder">Belgia</div>
                 </div>
                 <div class="card" id="Bulgaria" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/bg.png">
+                    <img id="Bulgaria" class="flag" src="https://flagcdn.com/160x120/bg.png">
                     <div class="flag-title font-weight-bolder">Bulgaria</div>
                 </div>
                 <div class="card" id="Chile" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/cl.png">
+                    <img id="Chile" class="flag" src="https://flagcdn.com/160x120/cl.png">
                     <div class="flag-title font-weight-bolder">Chile</div>
                 </div>
                 <div class="card" id="Denmark" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/dk.png">
+                    <img id="Denmark" class="flag" src="https://flagcdn.com/160x120/dk.png">
                     <div class="flag-title font-weight-bolder">Denmark</div>
                 </div>
                 <div class="card" id="Filipina" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/ph.png">
+                    <img id="Filipina" class="flag" src="https://flagcdn.com/160x120/ph.png">
                     <div class="flag-title font-weight-bolder">Filipina</div>
                 </div>
                 <div class="card" id="Finlandia" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/fi.png">
+                    <img id="Finlandia" class="flag" src="https://flagcdn.com/160x120/fi.png">
                     <div class="flag-title font-weight-bolder">Finlandia</div>
                 </div>
                 <div class="card" id="India" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/in.png">
+                    <img id="India" class="flag" src="https://flagcdn.com/160x120/in.png">
                     <div class="flag-title font-weight-bolder">India</div>
                 </div>
                 <div class="card" id="Jerman" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/de.png">
+                    <img id="Jerman" class="flag" src="https://flagcdn.com/160x120/de.png">
                     <div class="flag-title font-weight-bolder">Jerman</div>
                 </div>
                 <div class="card" id="Kamboja" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/kh.png">
+                    <img id="Kamboja" class="flag" src="https://flagcdn.com/160x120/kh.png">
                     <div class="flag-title font-weight-bolder">Kamboja</div>
                 </div>
                 <div class="card" id="Kanada" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/kh.png">
+                    <img id="Kanada" class="flag" src="https://flagcdn.com/160x120/kh.png">
                     <div class="flag-title font-weight-bolder">Kanada</div>
                 </div>
                 <div class="card" id="Laos" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/la.png">
+                    <img id="Laos" class="flag" src="https://flagcdn.com/160x120/la.png">
                     <div class="flag-title font-weight-bolder">Laos</div>
                 </div>
                 <div class="card" id="Mesir" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/eg.png">
+                    <img id="Mesir" class="flag" src="https://flagcdn.com/160x120/eg.png">
                     <div class="flag-title font-weight-bolder">Mesir</div>
                 </div>
                 <div class="card" id="Portugal" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/pt.png">
+                    <img id="Portugal" class="flag" src="https://flagcdn.com/160x120/pt.png">
                     <div class="flag-title font-weight-bolder">Portugal</div>
                 </div>
                 <div class="card" id="Rusia" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/ru.png">
+                    <img id="Rusia" class="flag" src="https://flagcdn.com/160x120/ru.png">
                     <div class="flag-title font-weight-bolder">Rusia</div>
                 </div>
                 <div class="card" id="Swiss" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/ch.png">
+                    <img id="Swiss" class="flag" src="https://flagcdn.com/160x120/ch.png">
                     <div class="flag-title font-weight-bolder">Swiss</div>
                 </div>
                 <div class="card" id="Timor Leste" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/tl.png">
+                    <img id="Timor Leste" class="flag" src="https://flagcdn.com/160x120/tl.png">
                     <div class="flag-title font-weight-bolder">Timor Leste</div>
                 </div>
                 <div class="card" id="Turki" onclick="toggle(event)">
-                    <img class="flag" src="https://flagcdn.com/160x120/tr.png">
+                    <img id="Turki" class="flag" src="https://flagcdn.com/160x120/tr.png">
                     <div class="flag-title font-weight-bolder">Turki</div>
                 </div>
             </div>
-            <div id="flag-content" class="d-print-inline-block">
+            <div id="flag-content" class="col-md-4">
                 <div class="contents-wrapper text-center font-weight-bolder"> Pilih Tingkat BIPA Anda </div>
-                <div class="contents-wrapper" id="bipa-1" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class="card content font-weight-bolder" id="bipa-1" onclick="toggleRuang(event)">
                         BIPA 1
                     </div>
-                    <div class="details">
-                        Detail BIPA 1
-                    </div>
                 </div>
-                <div class="contents-wrapper" id="bipa-2" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class="card content font-weight-bolder" id="bipa-2" onclick="toggleRuang(event)">
                         BIPA 2
                     </div>
-                    <div class="details">
-                        Detail BIPA 2
-                    </div>
                 </div>
-                <div class="contents-wrapper" id="bipa-3" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class="card content font-weight-bolder" id="bipa-3" onclick="toggleRuang(event)">
                         BIPA 3
                     </div>
-                    <div class="details">
-                        Detail BIPA 3
-                    </div>
                 </div>
-                <div class="contents-wrapper" id="bipa-4" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class="card content font-weight-bolder" id="bipa-4" onclick="toggleRuang(event)">
                         BIPA 4
                     </div>
-                    <div class="details">
-                        Detail BIPA 4
-                    </div>
                 </div>
-                <div class="contents-wrapper" id="bipa-5" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class="card content font-weight-bolder" id="bipa-5" onclick="toggleRuang(event)">
                         BIPA 5
                     </div>
-                    <div class="details">
-                        Detail BIPA 5
-                    </div>
                 </div>
-                <div class="contents-wrapper" id="bipa-6" onclick="toggle(event)">
-                    <div class="contents font-weight-bolder">
+                <div class="contents-wrapper">
+                    <div class=" card content font-weight-bolder" id="bipa-6" onclick="toggleRuang(event)">
                         BIPA 6
-                    </div>
-                    <div class="details">
-                        Detail BIPA 6
-                    </div>
                 </div>
             </div>
-            <div id="classroom-contents" class="d-print-inline-block">
-                <div class="classroom-contents-wrapper text-center font-weight-bolder"> Anda memilih Ruang: </div>
-                <div class="classroom-contents-wrapper" id="ruang-bincang" onclick="toggle(event)">
-                    <div class="classroom-contents font-weight-bolder">BIPA 1</div>
-                    <div class="details">
-                        Detail BIPA 1
-                    </div>
+            </div>
+            <div id="ruang-content" class="col-md-3">
+                <div class="ruang-contents-wrapper text-center font-weight-bolder"> Anda memilih Ruang: </div>
+                <div class="ruang-contents-wrapper">
+                    <div class="ruang-contents text-center font-weight-bolder">$Negara</div>
+                    <div class="ruang-contents text-center font-weight-bolder">$Tingkat</div>
                 </div>
-        </div>    
+            </div>
+        </div>   
     </div>
   </div>
   <footer class="bg-light text-dark text-center pb-2">
@@ -175,27 +157,5 @@
     <p class="font-weight-bolder"> Ruang Bincang BIPA</p>
     <p> © Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a></p>
   </footer>
-  
-  <script>
-    function toggle(event) {
-  var clickedCard = event.currentTarget;
-  var flagId = clickedCard.querySelector('.flag').id;
-
-  console.log('ID Negara: ' + flagId);
-
-  var flagContent = document.getElementById('flag-content');
-  var selectedBIPA = document.getElementById('bipa-' + flagId);
-
-  if (flagContent.style.display === "none") {
-    flagContent.style.display = "block";
-  } else {
-    flagContent.style.display = "none";
-  }
-  selectedBIPA.style.display = 'block';
-
-  var selectedBIPATitle = selectedBIPA.querySelector('.contents');
-  selectedBIPATitle.textContent = flagId; // Menampilkan nilai ID pada Card BIPA yang terpilih
-}
-</script>
 </body>
 </html>
