@@ -1,5 +1,4 @@
-function config() {
-    return {
+const config = {
     urlClassrooms: {
         "Global-BIPA 1": "https://google.com",
         "Global-BIPA 2": "https://Global-BIPA-2",
@@ -10,7 +9,6 @@ function config() {
         // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain
       }
     };
-}
 
 function toggle(event) {
   const clickedCard = event.currentTarget;
@@ -28,7 +26,7 @@ function toggle(event) {
   } else {
     flagContent.style.display = "none";
   }
-  return flagId
+  return flagId;
 }
 
 function toggleRuang(event) {
