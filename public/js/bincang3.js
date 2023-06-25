@@ -179,8 +179,6 @@ function pilihLanjut() {
     const tingkatBIPA = document.getElementById('tingkat-value').textContent;
     const urlClassrooms = config.urlClassrooms[`${negara}-${tingkatBIPA}`];
 
-    console.log(flagId + contentId);
-
     window.location.href = urlClassrooms;
 }
 
