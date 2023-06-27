@@ -1,7 +1,7 @@
 #flag-container {
     padding: 15px;
     width: 40%;
-    height: 600px;
+    height: 490px;
     background-color: aliceblue;
     overflow-y: auto;
     overflow-x: hidden;
@@ -11,7 +11,7 @@
 #flag-content {
     display: none;
     width: 40%;
-    height: 300px;
+    height: 490px;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
@@ -40,6 +40,7 @@
     margin-bottom: 3px;
     color: azure;
     position: -webkit-sticky;
+    object-position: center;
 }
 
 .card-title {

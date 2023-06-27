@@ -23,7 +23,16 @@
     <style>
         @media (max-width: 767px) {
             #flag-content {
-                max-width: 35%;
+            display: none;
+            width: 50%;
+            height: 200px;
+            padding: 15px;
+            background-color: aliceblue;
+            border: 1px solid #434658;
+            border-radius: 5px;
+            margin-left: 10px;
+            overflow-y: auto;
+            object-position: var(flag-container);
             }
             #flag-container {
                 max-width: 30%;
@@ -35,7 +44,16 @@
                 max-width: 35%;
             }
             #ruang-content {
-                max-width: 40%;
+            display: none;
+            width: 200px;
+            height: 100%;
+            padding: 15px;
+            background-color: aliceblue;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+            margin-left: 10px;
+            overflow-y: auto;
+            object-position: var(flag-container);
             }
             #ruang-content .btn {
                 margin-top: auto;
