@@ -113,7 +113,22 @@
     object-position: var(flag-container);
 }
 
+#ruang-content:hover {
+    display: none;
+    width: 65%;
+    transition: 2s ease all;
+    height: 100%;
+    padding: 15px;
+    background-color: aliceblue;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    margin-left: 10px;
+    overflow-y: auto;
+    object-position: var(flag-container);
+}
+
 .footer {
+    height: 10vw;
     max-height: 80%;
     min-height: 40%;
 }
