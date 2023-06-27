@@ -11,10 +11,10 @@
 #flag-content {
     display: none;
     width: 40%;
-    height: 600px;
+    height: 300px;
     padding: 15px;
     background-color: aliceblue;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #434658;
     border-radius: 5px;
     margin-left: 10px;
     overflow-y: auto;
@@ -29,16 +29,17 @@
     transition: transform 0.5s;
 }
 
-.card1 {
+.card-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     padding: 5px;
     margin: 2px;
-    background-color: rgba(0, 102, 255, 0.932);
+    background-color: rgba(2, 62, 139, 0.342);
     text-align: center; 
     font-weight: bolder; 
     margin-bottom: 3px;
     color: azure;
+    position: -webkit-sticky;
 }
 
 .card-title {
