@@ -1,7 +1,7 @@
 const config = {
     urlClassrooms: {
         "Global": "https://",
-        "Global-BIPA 1": "https://classroom.google.com/c/NjEzNTAyNzA2MDA4",
+        "Global-BIPA 1": "https://ringkas.kemdikbud.go.id/GlobalBIPA1",
         "Global-BIPA 2": "https://classroom.google.com/c/NjEzNDk5MjU1NjEy",
         "Global-BIPA 3": "https://classroom.google.com/c/NjEzNTAyMjEzNjYy",
         "Global-BIPA 4": "https://classroom.google.com/c/NjEzNTAwMDQ1ODgy",
