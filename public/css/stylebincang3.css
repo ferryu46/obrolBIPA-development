@@ -3,12 +3,12 @@
     width: 40%;
     height: 710px;
     border: 1px solid #434658;
-
     border-radius: 3px;
     background-color: aliceblue;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-3dlight-color: aqua;
+    margin-left: 15px;
 }
 
 #flag-content {
@@ -48,7 +48,7 @@
 
 .card-2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 95%;
+    width: 98%;
     padding: 5px;
     margin: 2px;
     background-color: rgba(2, 62, 139, 0.342);
@@ -62,7 +62,7 @@
 
 .card-3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 93%;
+    width: 96%;
     padding: 5px;
     margin: 2px;
     background-color: rgba(2, 62, 139, 0.342);
