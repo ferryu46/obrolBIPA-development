@@ -127,12 +127,6 @@
     object-position: var(flag-container);
 }
 
-.footer {
-    height: 10vw;
-    max-height: 80%;
-    min-height: 40%;
-}
-
 .brand {
     font-size: calc(var(--font-size) * .9);
     font-optical-sizing: 50rem;
