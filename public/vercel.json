@@ -1,7 +1,7 @@
 {
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/landing.html" }
+      { "src": "/.*", "dest": "/bincang3.html" }
     ]
   }
   
