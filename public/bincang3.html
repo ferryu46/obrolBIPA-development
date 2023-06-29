@@ -33,7 +33,7 @@
             border-radius: 5px;
             margin-left: 10px;
             overflow-y: auto;
-            object-position: var(flag-container);
+            object-position: relative;
             }
             #flag-container {
                 max-width: 30%;
@@ -207,10 +207,15 @@
         </div>   
     </div>
   </div>
-  <footer class="cukud bg-light text-dark text-center pb-2">
-    <img src="./images/logo_hakcipta.png">
-    <p class="brand font-weight-bolder">Ruang Bincang BIPA</p>
-    <p> © Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a></p>
-  </footer>
+  <footer class="cukud-responsive bg-light text-dark text-center pb-2"> 
+    <div class="d-flex justify-content-center align-items-center flex-column"> 
+        <img src="./images/logo_hakcipta.png" alt="Logo Hak Cipta"> 
+        <p class="brand font-weight-bolder">Ruang Bincang BIPA</p> 
+        <p>© Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a> </p> 
+    </div> 
+</footer>
+<style> 
+.cukud-responsive { position: fixed; left: 0; bottom: 0; width: 100%; } 
+@media (min-width: 576px) { .footer-responsive { position: unset; display:flex; justify-content:center; align-items:center } } </style>
 </body>
 </html>
