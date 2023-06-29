@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- My Style-->
     <link rel="stylesheet" href="./css/stylebincang3.css">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./css/output.css">
     <style>
         @media (max-width: 576px) {
             #flag-content {
@@ -64,7 +64,7 @@
 </head>
 <body background="./images/hero-bg.jpg">
 <div class="container-fluid">
-    <div style="border: #434658; height: 40px; padding-top:10px; text-align:center; font-weight: bolder;">Pilih Negara dan Tingkat BIPA Anda</div>
+    <div style="border: #434658; height: 40px; padding-top:10px; text-align:center; font-weight: bolder; position: sticky;">Pilih Negara dan Tingkat BIPA Anda</div>
         
         <div class="row mt-2">
             <div id="flag-container" class="col-md-4 align-content-center">
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div id="flag-content" class="col-md-4">
-                <div class="contents-wrapper text-center font-weight-bolder"> Pilih Tingkat BIPA Anda </div>
+                <div class="card-2 text-center">Pilih Tingkat BIPA</div>
                 <div class="contents-wrapper">
                     <div class="card content font-weight-bolder" id="BIPA 1" onclick="toggleRuang(event)">
                         BIPA 1
@@ -192,6 +192,7 @@
             </div>
             </div>
             <div id="ruang-content" class="col-md-3">
+                <div class="card-3 text-center">Ringkasan</div>
                 <div class="ruang-contents-wrapper text-center font-weight-bolder"> Anda memilih Ruang: </div>
                 <div class="ruang-contents-wrapper">
                     <div id="negara-value" class="ruang-contents text-center font-weight-bolder"></div>
