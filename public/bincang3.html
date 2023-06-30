@@ -16,7 +16,19 @@
 
   gtag('config', 'G-0HNFYM3D8T');
 </script>
-    <script type="text/javascript" src="./js/bincang3.js"></script>
+<script type="text/javascript">
+    let url = window.location.href;
+    
+    let index = url.lastIndexOf(".html");
+    
+    if (index !== -1) {
+      url = url.substring(0, index);
+    }
+    
+    window.history.replaceState(null, null, url);
+    </script>
+
+<script type="text/javascript" src="./js/bincang3.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
