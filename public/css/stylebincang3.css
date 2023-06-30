@@ -2,16 +2,16 @@
     padding: 15px;
     width: 40%;
     max-width: 350px;
-    height: 680px;
-    max-height: 98%;
+    height: 650px;
+    max-height: 100%;
     border: 1px solid #434658;
     border-radius: 10px;
     background-color: aliceblue;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-3dlight-color: aqua;
-    margin-left: 180px;
-    margin-top: 25px;
+    margin-left: 200px;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
@@ -19,14 +19,14 @@
     display: none;
     width: 40%;
     max-width: 350px;
-    height: 680px;
-    max-height: 98%;
+    height: 650px;
+    max-height: 100%;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
     border-radius: 10px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
     overflow-y: auto;
     object-position: var(flag-container);
 }
@@ -144,13 +144,13 @@
 #ruang-content {
     display: none;
     width: 55%;
-    height: 100%;
+    height: 95%;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
     border-radius: 10px;
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
     overflow-y: auto;
     object-position: var(flag-container);
 }

@@ -2,6 +2,11 @@
 <html lang="eng">
 <head>
     <title>Ruang Bincang BIPA</title>
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon" />
+    <link href="images/logo_bipa.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HNFYM3D8T"></script>
 <script>
@@ -21,7 +26,9 @@
     <!-- My Style-->
     <link rel="stylesheet" href="./css/stylebincang3.css">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
+        
         @media (max-width: 576px) {
             #flag-content {
             display: none;
@@ -64,8 +71,88 @@
 </head>
 <body background="./images/bg_modul.png">
 <div class="container-fluid">
-    <div style="border: #434658; margin-top: 10px; height: 40px; padding-top:10px; text-align:center; font-weight: bolder; position: sticky;">Pilih Negara dan Tingkat BIPA Anda</div>
-        
+    <!-- ======= Header ======= -->
+    <style>
+        .iconDetails {
+          margin-left: 2%;
+          float: left;
+        }
+  
+        .container2 {
+          width: 450px;
+          height: auto;
+          padding: 1%;
+          display: inline-block;
+        }
+        .nav-menu a:hover {
+          opacity: 0.4;
+        }
+      </style>
+      <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center" style="vertical-align: middle; min-width: 200px; z-index: -1;">
+          <!--<h1 class="logo mr-auto"><img src="images/logo_tut.png" ></h1>-->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="portal" class="logo mr-auto">
+            <div class="container2">
+              <div class="row">
+                <div>
+                  <img src="images/logo_tut.png" alt class="iconDetails d-none d-lg-block" />
+                  <img src="images/logo_tut.png" alt class="iconDetails d-flex d-lg-none" style="width: 90%; height: auto" />
+                </div>
+                <div style="font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left: 10px; text-align: left">Kementerian<br />Pendidikan, Kebudayaan, <br />Riset, dan Teknologi</div>
+              </div>
+            </div>
+          </a>
+          <nav class="nav-menu d-none d-lg-block">
+            <ul>
+              <li>
+                  <a href="about" style="color: #333333" title="Tentang Kami">
+                  <img src="images/about.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Tentang kami</div></a>
+              </li>
+              <li>
+                <a href="contact" style="color: #333333" title="Hubungi Kami"
+                  ><img src="images/contact.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Hubungi kami</div></a
+                >
+              </li>
+              <li>
+                <a href="ssd" style="color: #333333" title="Soal Sering Ditanya/FAQ"
+                  ><img src="images/faq.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">SSD</div></a
+                >
+              </li>
+              <li>
+                <a href="polling" style="color: #333333" title="Jajak Pendapat"
+                  ><img src="images/polling.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Jajak Pendapat</div></a>
+              </li>
+              <li><a href="standpel.php" style="color:#333333;" title="Standar Pelayanan"><img src="images/standpel.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">Standar Pelayanan</div></a></li>
+              <li><a href="skm.php" style="color:#333333;" title="SKM"><img src="images/skm.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">SKM</div></a></li>
+            <li><a href="https://kemdikbud.lapor.go.id/" target="_blank" style="color:#333333;" title="Span"><img src="images/span.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">Span Lapor</div></a></li>
+              <li class="d-none d-lg-block"><img src="images/merdeka.png" /></li>
+              <li><a href="languages.php?lang=english&master=portal.php&q=" style="color:#333333;"  title="English Language"><b>English</b></a></li>
+            </ul>
+          </nav>
+          <!-- .nav-menu -->
+        </div>
+      </header>
+      <!-- End Header -->
+      <!-- <div class="container col-span-2 mt-40 align-content-left">
+            <div class="row mt-20">
+                <div class="col-md-4 mt-40" style="display:flex; align-items:left; flex-direction: column; position: relative;">
+                    <img  src="images/bincang02.png" style="max-width: 60%; position: relative; z-index: 1;">
+                    <div style="text-align: left; line-height: 16px; font-size: 12px; position: relative; z-index: 1;">
+                        <span style=" font-size: 16pt; font-weight:bold;">Bincang BIPA</span>
+                        <br />
+                        Ruang Bincang Pemelajar BIPA
+                    </div>
+                </div> -->
+                <div class="container-fluid col-md-8">    
+                    <div style="margin-top: 130px; height: 20px; padding-top:10px; text-align:center; align-content: center; font-weight: bolder; position: relative;">Pilih Negara dan Tingkat BIPA Anda</div>
+                </div>
+            </div>
+    </div>
         <div class="row mt-2">
             <div id="flag-container" class="col-md-4 align-content-center">
                 <div class="card-1">Pilih Negara</div>
@@ -214,7 +301,7 @@
     </div> 
 </footer>
 <style> 
-.cukud-responsive { position: fixed; margin: top 55% ; left: 0; bottom: 0; width: 100%; } 
+.cukud-responsive { position: fixed; margin: top 75% ; left: 0; bottom: 0; width: 100%; } 
 @media (min-width: 576px) { .cukud-responsive { position: unset; display:flex; justify-content:center; align-items:center } } </style>
 </body>
 </html>
