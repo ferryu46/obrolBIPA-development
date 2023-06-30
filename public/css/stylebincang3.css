@@ -2,25 +2,31 @@
     padding: 15px;
     width: 40%;
     max-width: 350px;
-    height: 650px;
+    height: 680px;
+    max-height: 98%;
     border: 1px solid #434658;
-    border-radius: 3px;
+    border-radius: 10px;
     background-color: aliceblue;
     overflow-y: auto;
     overflow-x: hidden;
     scrollbar-3dlight-color: aqua;
-    margin-left: 15px;
+    margin-left: 180px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #flag-content {
     display: none;
     width: 40%;
-    height: 650px;
+    max-width: 350px;
+    height: 680px;
+    max-height: 98%;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
-    border-radius: 5px;
-    margin-left: 10px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
     overflow-y: auto;
     object-position: var(flag-container);
 }
@@ -35,6 +41,7 @@
 
 .card-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     width: 100%;
     padding: 5px;
     margin: 2px;
@@ -49,6 +56,7 @@
 
 .card-2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     width: 98%;
     padding: 5px;
     margin: 2px;
@@ -63,6 +71,7 @@
 
 .card-3 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     width: 96%;
     padding: 5px;
     margin: 2px;
@@ -139,8 +148,9 @@
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
-    border-radius: 5px;
-    margin-left: 10px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 25px;
     overflow-y: auto;
     object-position: var(flag-container);
 }
