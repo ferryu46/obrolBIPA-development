@@ -133,7 +133,8 @@ const config = {
         "Turki-BIPA 4": "https://classroom.google.com/c/NTU0NDU5NjQ4MzM4",
         "Turki-BIPA 5": "https://classroom.google.com/c/NjE1MjQ4MjgyMzcz",
         "Turki-BIPA 6": "https://classroom.google.com/c/NjE1MjUwMzMwOTYy"
-        // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain
+        
+        // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain jika dibutuhkan
       }
     };
 

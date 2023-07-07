@@ -1,44 +1,53 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Ruang Bincang BIPA</title>
+    <meta content name="description">
+    <meta content name="keywords">
 <head>
+<title>Ruang Bincang BIPA</title>
+<!-- Favicons -->
+    <link href="images/favicon.png" rel="icon" />
+    <link href="images/logo_bipa.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HNFYM3D8T"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-// Ambil URL saat ini
-let url = window.location.href;
-
-// Cari indeks posisi ekstensi ".html"
-let index = url.lastIndexOf(".html");
-
-// Jika ekstensi ditemukan, hapus ekstensi
-if (index !== -1) {
-  url = url.substring(0, index);
-}
-
-// Ubah URL saat ini ke URL baru tanpa ekstensi ".html"
-window.history.replaceState(null, null, url);
+  gtag('config', 'G-0HNFYM3D8T');
 </script>
-<meta content name="description">
-<meta content name="keywords">
-
-<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet">
-
+<script type="text/javascript">
+    let url = window.location.href;
+    
+    let index = url.lastIndexOf(".html");
+    
+    if (index !== -1) {
+      url = url.substring(0, index);
+    }
+    
+    window.history.replaceState(null, null, url);
+</script>
+<script type="text/javascript" src="./js/bincang3.js"></script>
 <!-- Vendor CSS Files -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/icofont.min.css" rel="stylesheet">
-<link href="css/boxicons.min.css" rel="stylesheet">
-<link href="css/remixicon.css" rel="stylesheet">
-<link href="css/owl.carousel.min.css" rel="stylesheet">
-<link href="css/animate.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/icofont.min.css" rel="stylesheet"/>
+<link href="css/boxicons.min.css" rel="stylesheet"/>
+<link href="css/remixicon.css" rel="stylesheet"/>
+<link href="css/owl.carousel.min.css" rel="stylesheet"/>
+<link href="css/animate.min.css" rel="stylesheet"/>
 <!-- Template Main CSS File -->
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link href="css/stylebincang.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link href="css/stylebincang.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/output.css"/>
 
 </head>
 <body>
 <section id="pilihruang">
-    <script>
+<script type="text/javascript">
         window.addEventListener('DOMContentLoaded', (event) => {
   // Menerapkan class "show" pada tulisan "Pilih Negara" dan card
   const judul = document.getElementById('judul');
@@ -50,10 +59,10 @@ window.history.replaceState(null, null, url);
     card.classList.add('show');
   });
 });
-</script>
+</script>    
     <div class="container mt-2">
         <div class="country-selection mt-3">
-            <h3 id="judul">Pilih Negara Anda:</h3>
+            <h3 id="judul" class="pilih-negara font-weight-bolder">Pilih Negara Anda:</h3>
             <div class="country-grid mt-3">
                 <div class="row"> 
 
@@ -211,7 +220,7 @@ window.history.replaceState(null, null, url);
                     <h5>Turki</h5>
                     </div>
                     </div>
-                
+                </section>
                 <!--Pilihan ruang sesudah memilih negara-->
                 <!--Ruang Global-->
                 <section id="ruang-global" class="hidden">
@@ -298,7 +307,7 @@ window.history.replaceState(null, null, url);
         </div>
         </div>
   <footer class="bg-light text-dark text-center pb-2">
-    <img src="https://bipa.kemdikbud.go.id/images/logo_hakcipta.png">
+    <img src="/public/images/logo_hakcipta.png">
     <p> Ruang Bincang BIPA Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a></p>
   </footer>
 </section>
