@@ -144,16 +144,25 @@ function toggle(event) {
 
   console.log('ID Negara: ' + flagId);
 
+    let negaraElements = document.querySelectorAll('[id^="negara"]');
+        negaraElements.forEach((element) => {
+          if (!element.classList.contains('hidden')) {
+            element.classList.add('hidden');
+          }
+        });
+
   let negaraValue = document.getElementById('negara-value')
   negaraValue.textContent = flagId;
-  
+  negaraValue.classList.remove('hidden');
+
   let flagContent = document.getElementById('flag-content');
   
-  if (flagContent.style.display === "none") {
-    flagContent.style.display = "block";
-  } else {
-    flagContent.style.display = "none";
+  if (flagContent.classList.contains('hidden')) {
+    flagContent.classList.remove('hidden');
   }
+
+  clickedCard.classList.add('hidden');
+
   return flagId;
 }
 
@@ -163,21 +172,25 @@ function toggleRuang(event) {
     
     console.log('Tingkat BIPA yang dipilih : ' + contentId);
 
+
     let tingkatValue = document.getElementById('tingkat-value');
     tingkatValue.textContent = contentId;
 
     let ruangContent = document.getElementById('ruang-content');
-    if (ruangContent.style.display === "none") {
-        ruangContent.style.display = "block";
-    } else {
-        ruangContent.style.display = "none";
+    if (ruangContent.classList.contains('hidden')) {
+        ruangContent.classList.remove('hidden');
+    }
+
+    let hasil = document.getElementById('hasil-container');
+    if (hasil.classList.contains('hidden')) {
+        hasil.classList.remove('hidden');
     }
 
     return contentId;
    }
 
 function pilihLanjut() {
-    const negara = document.getElementById('negara-value').textContent;
+    const negara = document.getElementById('negara-value').textContent;;
     const tingkatBIPA = document.getElementById('tingkat-value').textContent;
     const urlClassrooms = config.urlClassrooms[`${negara}-${tingkatBIPA}`];
 

@@ -76,12 +76,71 @@ h6 {
     margin-bottom: 10px;
   }
 
-  #flag-content {
+#flag-content {
     display: none;
-    width: 40%;
+    opacity: 0;
+}
+
+#flag-content:not(.hidden) {
     max-width: 350px;
     height: 150px;
     max-height: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: scale-in 0.5s ease;
+    animation-delay: 1s; /* Delay untuk card */
+    margin-bottom: 10px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    }
+
+.contents-wrapper {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    border: 1px solid #5570da;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    width: 150px;
+}
+
+.contents-wrapper:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+#ruang-content {
+    display: none;
+    opacity: 0;
+}
+
+#ruang-content:not(.hidden) {
+  max-width: 550px;
+  max-height: 100%;
+  margin-left: 25px;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  animation: scale-in 0.5s ease;
+  animation-delay: 1s; /* Delay untuk card */
+  margin-bottom: 10px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+    width: 55%;
+    height: 95%;
     padding: 15px;
     background-color: aliceblue;
     border: 1px solid #434658;
@@ -90,7 +149,18 @@ h6 {
     margin-top: 10px;
     overflow-y: auto;
 }
+
+
+        #ruang-content .btn {
+            margin-top: auto;
+        }
   
+  
+.hidden {
+    display: none;
+  }  
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
