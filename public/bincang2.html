@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Ruang Bincang BIPA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon" />
+    <link href="images/logo_bipa.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,900,700,700i" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HNFYM3D8T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0HNFYM3D8T');
+</script>
+<script type="text/javascript">
+    let url = window.location.href;
+    
+    let index = url.lastIndexOf(".html");
+    
+    if (index !== -1) {
+      url = url.substring(0, index);
+    }
+    
+    window.history.replaceState(null, null, url);
+    </script>
+
+<script type="text/javascript" src="./js/bincang3.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My Style-->
+    <link rel="stylesheet" href="./css/stylebincang2.css">
+</head>
+
+<body background="./images/bg_modul.png">
+<div class="container-fluid">
+    <!-- ======= Header ======= -->
+      
+      <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center" style="vertical-align: middle; min-width: 200px; z-index: -1;">
+          <!--<h1 class="logo mr-auto"><img src="images/logo_tut.png" ></h1>-->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="index.html" class="logo mr-auto">
+            <div class="row">
+                <div>
+                  <img src="images/logo_tut.png" alt class="iconDetails d-none d-lg-block" />
+                  <img src="images/logo_tut.png" alt class="iconDetails d-flex d-lg-none" style="width: 90%; height: auto" />
+                </div>
+                <div style="margin-left: 35px; font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left: 10px; text-align: left">Kementerian<br />Pendidikan, Kebudayaan, <br />Riset, dan Teknologi</div>
+            </div>
+          </a>
+          <nav class="nav-menu d-none d-block">
+            <ul>
+              <li>
+                  <a href="about" style="color: #333333" title="Tentang Kami">
+                  <img src="images/about.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Tentang kami</div></a>
+              </li>
+              <li>
+                <a href="contact" style="color: #333333" title="Hubungi Kami"
+                  ><img src="images/contact.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Hubungi kami</div></a
+                >
+              </li>
+              <li>
+                <a href="ssd" style="color: #333333" title="Soal Sering Ditanya/FAQ"
+                  ><img src="images/faq.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">SSD</div></a
+                >
+              </li>
+              <li>
+                <a href="polling" style="color: #333333" title="Jajak Pendapat"
+                  ><img src="images/polling.png" style="float: left" />
+                  <div class="d-flex d-lg-none" style="padding-top: 3px; padding-left: 5px">Jajak Pendapat</div></a>
+              </li>
+              <li><a href="standpel.php" style="color:#333333;" title="Standar Pelayanan"><img src="images/standpel.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">Standar Pelayanan</div></a></li>
+              <li><a href="skm.php" style="color:#333333;" title="SKM"><img src="images/skm.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">SKM</div></a></li>
+            <li><a href="https://kemdikbud.lapor.go.id/" target="_blank" style="color:#333333;" title="Span"><img src="images/span.png" style="float: left;"><div class="d-flex d-lg-none" style=" padding-top: 3px; padding-left:5px;">Span Lapor</div></a></li>
+              <li class="d-none d-lg-block"><img src="images/merdeka.png" /></li>
+              <li><a href="languages.php?lang=english&master=portal.php&q=" style="color:#333333;"  title="English Language"><b>English</b></a></li>
+            </ul>
+          </nav>
+          <!-- .nav-menu -->
+        </div>
+      </header>
+      <!-- End Header -->
+      <div class="container-fluid col-md-8" style="margin-top: auto;">    
+        <div class="font-weight-bolder" style="margin-top: 120px; height: 20px; padding-top:10px; text-align:center; align-content: center; font-weight: bolder; position: relative;">Pilih Negara dan Tingkat BIPA Anda</div>
+    </div>
+</div>
+<div class="row mt-4 ml-5" id="negara">
+    <!--Country Card 0-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+    <div class="country-card" id="Global" onclick="toggle(event)">
+    <img id="Global" class="flag" src="./images/un.png" alt="Global">
+    <div class="flag-title font-weight-bolder">Global</div>
+    </div>
+    </div>
+    <!--Country Card 1-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+    <div class="country-card" id="Afrika Selatan" onclick="toggle(event)">
+    <img id="Afrika Selatan" class="flag" src="https://flagcdn.com/64x48/za.png" alt="Afrika Selatan">
+    <div class="flag-title font-weight-bold">Afrika Selatan</div>
+    </div>
+    </div>
+    <!--Country Card 2-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Amerika Serikat" onclick="toggle(event)">
+        <img id="Amerika Serikat" class="flag" src="https://flagcdn.com/64x48/us.png" alt="Amerika Serikat">
+        <div class="flag-title font-weight-bolder">Amerika Serikat</div>
+        </div>
+        </div>
+    <!--Country Card 3-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Australia" onclick="toggle(event)">
+        <img id="Australia" class="flag" src="https://flagcdn.com/64x48/au.png" alt="Australia">
+        <div class="flag-title font-weight-bolder">Australia</div>
+        </div>
+        </div>
+    <!--Country Card 4-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Austria" onclick="toggle(event)">
+        <img id="Austria" class="flag" src="https://flagcdn.com/64x48/at.png" alt="Austria">
+        <div class="flag-title font-weight-bolder">Austria</div>
+        </div>
+        </div>
+    <!--Country Card 5-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Belgia" onclick="toggle(event)">
+        <img id="Belgia" class="flag" src="https://flagcdn.com/64x48/be.png" alt="Belgia">
+        <div class="flag-title font-weight-bolder">Belgia</div>
+        </div>
+        </div>
+    <!--Country Card 6-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Bulgaria" onclick="toggle(event)">
+        <img id="Bulgaria" class="flag" src="https://flagcdn.com/64x48/bg.png" alt="Bulgaria">
+        <div class="flag-title font-weight-bolder">Bulgaria</div>
+        </div>
+        </div>
+    <!--Country Card 7-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Chile" onclick="toggle(event)">
+        <img id="Chile" class="flag" src="https://flagcdn.com/64x48/cl.png" alt="Chile">
+        <div class="flag-title font-weight-bolder">Chile</div>
+        </div>
+        </div>
+    <!--Country Card 8-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Denmark" onclick="toggle(event)">
+        <img id="Denmark" class="flag" src="https://flagcdn.com/64x48/dk.png" alt="Denmark">
+        <div class="flag-title font-weight-bolder">Denmark</div>
+        </div>
+        </div>
+    <!--Country Card 9-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Filipina" onclick="toggle(event)">
+        <img id="Filipina" class="flag" src="https://flagcdn.com/64x48/ph.png" alt="Filipina">
+        <div class="flag-title font-weight-bolder">Filipina</div>
+        </div>
+        </div>
+    <!--Country Card 10-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Finlandia" onclick="toggle(event)">
+        <img id="Finlandia" class="flag" src="https://flagcdn.com/64x48/fi.png" alt="Finlandia">
+        <div class="flag-title font-weight-bolder">Finlandia</div>
+        </div>
+        </div>
+    <!--Country Card 11-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="India" onclick="toggle(event)">
+        <img id="India" class="flag" src="https://flagcdn.com/64x48/in.png" alt="India">
+        <div class="flag-title font-weight-bolder">India</div>
+        </div>
+        </div>
+    <!--Country Card 12-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Jerman" onclick="toggle(event)">
+        <img id="Jerman" class="flag" src="https://flagcdn.com/64x48/de.png" alt="Jerman">
+        <div class="flag-title font-weight-bolder">Jerman</div>
+        </div>
+        </div>
+    <!--Country Card 13-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Kamboja" onclick="toggle(event)">
+        <img id="Kamboja" class="flag" src="https://flagcdn.com/64x48/kh.png" alt="Kamboja">
+        <div class="flag-title font-weight-bolder">Kamboja</div>
+        </div>
+        </div>
+    <!--Country Card 14-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Kanada" onclick="toggle(event)">
+        <img id="Kanada" class="flag" src="https://flagcdn.com/64x48/ca.png" alt="Kanada">
+        <div class="flag-title font-weight-bolder">Kanada</div>
+        </div>
+        </div>
+    <!--Country Card 15-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Laos" onclick="toggle(event)">
+        <img id="Laos" class="flag" src="https://flagcdn.com/64x48/la.png" alt="Laos">
+        <div class="flag-title font-weight-bolder">Laos</div>
+        </div>
+        </div>
+    <!--Country Card 16-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Mesir" onclick="toggle(event)">
+        <img id="Mesir" class="flag" src="https://flagcdn.com/64x48/eg.png" alt="Mesir">
+        <div class="flag-title font-weight-bolder">Mesir</div>
+        </div>
+        </div>
+    <!--Country Card 17-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Portugal" onclick="toggle(event)">
+        <img id="Portugal" class="flag" src="https://flagcdn.com/64x48/pt.png" alt="Portugal">
+        <div class="flag-title font-weight-bolder">Portugal</div>
+        </div>
+        </div>
+    <!--Country Card 18-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Rusia" onclick="toggle(event)">
+        <img id="Rusia" class="flag" src="https://flagcdn.com/64x48/ru.png" alt="Rusia">
+        <div class="flag-title font-weight-bolder">Rusia</div>
+        </div>
+        </div>
+    <!--Country Card 19-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Swiss" onclick="toggle(event)">
+        <img id="Swiss" class="flag" src="https://flagcdn.com/64x48/ch.png" alt="Swiss">
+        <div class="flag-title font-weight-bolder">Swiss</div>
+        </div>
+        </div>
+    <!--Country Card 20-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Timor Leste" onclick="toggle(event)">
+        <img id="Timor Leste" class="flag" src="https://flagcdn.com/64x48/tl.png" alt="Timor Leste">
+        <div class="flag-title font-weight-bolder">Timor Leste</div>
+        </div>
+        </div>
+    <!--Country Card 21-->
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Turki" onclick="toggle(event)">
+        <img id="Turki" class="flag" src="https://flagcdn.com/64x48/tr.png" alt="Turki">
+        <div class="flag-title font-weight-bolder">Turki</div>
+        </div>
+        </div>
+    </div>
+    <div id="flag-content" class="col-md-3">
+      <div class="contents-wrapper">
+          <div class="card-content font-weight-bolder" id="BIPA 1" onclick="toggleRuang(event)">
+              BIPA 1
+          </div>
+      </div>
+      <div class="contents-wrapper">
+          <div class="card-content font-weight-bolder" id="BIPA 2" onclick="toggleRuang(event)">
+              BIPA 2
+          </div>
+      </div>
+      <div class="contents-wrapper">
+          <div class="card-content font-weight-bolder" id="BIPA 3" onclick="toggleRuang(event)">
+              BIPA 3
+          </div>
+      </div>
+      <div class="contents-wrapper">
+          <div class="card-content font-weight-bolder" id="BIPA 4" onclick="toggleRuang(event)">
+              BIPA 4
+          </div>
+      </div>
+      <div class="contents-wrapper">
+          <div class="card-content font-weight-bolder" id="BIPA 5" onclick="toggleRuang(event)">
+              BIPA 5
+          </div>
+      </div>
+      <div class="contents-wrapper">
+          <div class=" card-content font-weight-bolder" id="BIPA 6" onclick="toggleRuang(event)">
+              BIPA 6
+          </div>
+      </div>
+  </div>
+
+</body>
+</html>

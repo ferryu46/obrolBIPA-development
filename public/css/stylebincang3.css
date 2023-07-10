@@ -1,3 +1,7 @@
+#header .logo img {
+    max-height: 90px;
+  }
+
 #flag-container {
     padding: 15px;
     width: 40%;
@@ -15,6 +19,77 @@
     margin-bottom: 25px;
 }
 
+@media (280px <= width <= 376px) {
+    #header .logo img {
+        height: 20px;
+        max-width: 60px;
+    }
+    
+    .container {
+    display: flex-auto;
+    column-gap: auto;
+    }
+
+    .container-fluid {
+    margin-top: -40px;
+    }
+
+    .hero-container {
+    display: flex;
+    }
+
+    #flag-container {
+    padding: 10px;
+    width: 45vw;
+    max-width: 187px;
+    height: 50vh;
+    max-height: 50%;
+    border: 1px solid #434658;
+    border-radius: 10px;
+    background-color: aliceblue;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 4px;
+    margin-top: 8px;
+    }
+
+    #flag-content {
+    display: none;
+    width: 45vw;
+    max-width: 187px;
+    padding: 15px;
+    background-color: aliceblue;
+    border: 1px solid #434658;
+    border-radius: 5px;
+    overflow-y: auto;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 14px;
+    }
+    
+    #ruang-content {
+        display: none;
+        width: 100vw;
+        max-width: 80%;
+        height: 80vh;
+        max-height: 25%;
+        padding: 15px;
+        background-color: aliceblue;
+        border: 1px solid #434658;
+        border-radius: 5px;
+        margin-left: 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        }
+        #ruang-content .btn {
+            margin-top: auto;
+        }
+    
+    .card-2 {
+        margin-top: 2px;
+    }
+}
+
 #flag-content {
     display: none;
     width: 40%;
@@ -28,7 +103,6 @@
     margin-left: 25px;
     margin-top: 10px;
     overflow-y: auto;
-    object-position: var(flag-container);
 }
 
 .card {
@@ -107,7 +181,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     padding: 15px;
-    margin: 8px;
+    margin: 4px;
     border: 1px solid #5570da;
     border-radius: 10px;
     margin-left: 0;
@@ -152,7 +226,6 @@
     margin-left: 25px;
     margin-top: 10px;
     overflow-y: auto;
-    object-position: var(flag-container);
 }
 
 #ruang-content:hover {
@@ -166,7 +239,6 @@
     border-radius: 5px;
     margin-left: 10px;
     overflow-y: auto;
-    object-position: var(flag-container);
 }
 
 .brand {

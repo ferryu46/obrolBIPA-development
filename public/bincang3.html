@@ -39,57 +39,17 @@
     <link rel="stylesheet" href="./css/stylebincang3.css">
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        
-        @media (max-width: 576px) {
-            #flag-content {
-            display: none;
-            max-width: 40%;
-            height: 380px;
-            padding: 15px;
-            background-color: aliceblue;
-            border: 1px solid #434658;
-            border-radius: 5px;
-            margin-left: 10px;
-            overflow-y: auto;
-            }
-            #flag-container {
-                max-width: 40%;
-                height: 380px;
-            }
-            #container {
-                max-width: 35%;
-            }
-            #card-content {
-                max-width: 35%;
-            }
-            #ruang-content {
-            display: none;
-            width: 100%;
-            height: 80%;
-            padding: 15px;
-            background-color: aliceblue;
-            border: 1px solid #434658;
-            border-radius: 5px;
-            margin-left: 10px;
-            overflow-y: auto;
-            }
-            #ruang-content .btn {
-                margin-top: auto;
-            }
-        }
-    </style>
-
 </head>
+
 <body background="./images/bg_modul.png">
 <div class="container-fluid">
     <!-- ======= Header ======= -->
-    <style>
+<style>
         .iconDetails {
           margin-left: 2%;
           float: left;
         }
-  
+
         .container2 {
           width: 450px;
           height: auto;
@@ -99,20 +59,19 @@
         .nav-menu a:hover {
           opacity: 0.4;
         }
-      </style>
+</style>
+      
       <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center" style="vertical-align: middle; min-width: 200px; z-index: -1;">
           <!--<h1 class="logo mr-auto"><img src="images/logo_tut.png" ></h1>-->
           <!-- Uncomment below if you prefer to use an image logo -->
-          <a href="portal" class="logo mr-auto">
-            <div class="container2">
-              <div class="row">
+          <a href="index.html" class="logo mr-auto">
+            <div class="container2 row-auto">
                 <div>
                   <img src="images/logo_tut.png" alt class="iconDetails d-none d-lg-block" />
                   <img src="images/logo_tut.png" alt class="iconDetails d-flex d-lg-none" style="width: 90%; height: auto" />
                 </div>
                 <div style="font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left: 10px; text-align: left">Kementerian<br />Pendidikan, Kebudayaan, <br />Riset, dan Teknologi</div>
-              </div>
             </div>
           </a>
           <nav class="nav-menu d-none d-lg-block">
@@ -164,8 +123,7 @@
                     <div style="margin-top: 130px; height: 20px; padding-top:10px; text-align:center; align-content: center; font-weight: bolder; position: relative;">Pilih Negara dan Tingkat BIPA Anda</div>
                 </div>
             </div>
-    </div>
-        <div class="row mt-2">
+        <div class="container flex mt-2">
             <div id="flag-container" class="col-md-4 align-content-center">
                 <div class="card-1">Pilih Negara</div>
                 <div class="card" id="Global" onclick="toggle(event)">
@@ -257,7 +215,7 @@
                     <div class="flag-title font-weight-bolder">Turki</div>
                 </div>
             </div>
-            <div id="flag-content" class="col-md-4">
+            <div id="flag-content" class="col-md-3">
                 <div class="card-2 text-center">Pilih Tingkat BIPA</div>
                 <div class="contents-wrapper">
                     <div class="card content font-weight-bolder" id="BIPA 1" onclick="toggleRuang(event)">
@@ -305,7 +263,7 @@
         </div>   
     </div>
 </section>
-  <footer class="cukud-responsive bg-light text-dark text-center pb-2"> 
+  <footer class="container-fluid cukud-responsive bg-light text-dark text-center pb-2"> 
     <div class="d-flex justify-content-center align-items-center flex-column"> 
         <img src="./images/logo_hakcipta.png" alt="Logo Hak Cipta"> 
         <p class="brand font-weight-bolder">Ruang Bincang BIPA</p> 
@@ -314,6 +272,6 @@
 </footer>
 <style> 
 .cukud-responsive { position: fixed; margin: top 75% ; left: 0; bottom: 0; width: 100%; } 
-@media (min-width: 576px) { .cukud-responsive { position: unset; display:flex; justify-content:center; align-items:center } } </style>
+@media (min-width: 576px) { .cukud-responsive { position: fixed; display:flex; width:100vw; justify-content:center; align-items:center } } </style>
 </body>
 </html>

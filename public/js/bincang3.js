@@ -144,13 +144,13 @@ function toggle(event) {
 
   console.log('ID Negara: ' + flagId);
 
-  let negaraValue = document.getElementById('negara-value');
+  let negaraValue = document.getElementById('negara')
   negaraValue.textContent = flagId;
   
   let flagContent = document.getElementById('flag-content');
   
   if (flagContent.style.display === "none") {
-    flagContent.style.display = "block";
+    flagContent.style.display = "flex";
   } else {
     flagContent.style.display = "none";
   }
@@ -177,7 +177,7 @@ function toggleRuang(event) {
    }
 
 function pilihLanjut() {
-    const negara = document.getElementById('negara-value').textContent;
+    const negara = document.getElementById('negara').textContent;
     const tingkatBIPA = document.getElementById('tingkat-value').textContent;
     const urlClassrooms = config.urlClassrooms[`${negara}-${tingkatBIPA}`];
 
