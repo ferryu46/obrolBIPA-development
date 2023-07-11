@@ -186,6 +186,11 @@ function toggleRuang(event) {
         hasil.classList.remove('hidden');
     }
 
+    let footer = document.getElementById('footer');
+    if (footer.classList.contains('hidden')) {
+      footer.classList.remove('hidden');
+    }
+
     return contentId;
    }
 
