@@ -253,46 +253,46 @@
     </div>
     <div id="flag-content" class="row hidden">
       <div class="contents-wrapper">
-          <div class="card-content font-weight-bolder" id="BIPA 1" onclick="toggleRuang(event)">
+          <div class="card-content text-danger" id="BIPA 1" onclick="toggleRuang(event)">
               BIPA 1
           </div>
       </div>
       <div class="contents-wrapper">
-          <div class="card-content font-weight-bolder" id="BIPA 2" onclick="toggleRuang(event)">
+          <div class="card-content text-danger" id="BIPA 2" onclick="toggleRuang(event)">
               BIPA 2
           </div>
       </div>
       <div class="contents-wrapper">
-          <div class="card-content font-weight-bolder" id="BIPA 3" onclick="toggleRuang(event)">
+          <div class="card-content text-danger" id="BIPA 3" onclick="toggleRuang(event)">
               BIPA 3
           </div>
       </div>
       <div class="contents-wrapper">
-          <div class="card-content font-weight-bolder" id="BIPA 4" onclick="toggleRuang(event)">
+          <div class="card-content text-danger" id="BIPA 4" onclick="toggleRuang(event)">
               BIPA 4
           </div>
       </div>
       <div class="contents-wrapper">
-          <div class="card-content font-weight-bolder" id="BIPA 5" onclick="toggleRuang(event)">
+          <div class="card-content text-danger" id="BIPA 5" onclick="toggleRuang(event)">
               BIPA 5
           </div>
       </div>
       <div class="contents-wrapper">
-          <div class=" card-content font-weight-bolder" id="BIPA 6" onclick="toggleRuang(event)">
+          <div class=" card-content text-danger" id="BIPA 6" onclick="toggleRuang(event)">
               BIPA 6
           </div>
       </div>
   </div>
   <div id="ruang-content" class="align-center col-md-3 hidden">
-    <div class="card-3 text-center">Ringkasan</div>
-    <div class="ruang-contents-wrapper text-center font-weight-bolder mb-3"> Anda memilih Ruang: </div>
-    <div class="ruang-contents-wrapper mt-4 mb-3">
-        <div id="negara-value" class="ruang-content text-center font-weight-bolder hidden"></div>
-        <div id="tingkat-value" class="ruang-content text-center font-weight-bolder"></div>
+    <div class="font-weight-bolder mb-3"> Anda memilih Ruang: </div>
+        <div class="mt-4 mb-3">
+            <div id="negara-value" class="ruang-content text-danger font-weight-bolder hidden"></div>
+            <div id="tingkat-value" class="ruang-content text-danger font-weight-bolder"></div>
+        </div>
+        <div id="hasil-container" class="hasil-opsi d-flex justify-content-center hidden">
+            <button class="btn btn-primary mx-2 mt-3" onclick="pilihLanjut()">Lanjut</button>
+            <button class="btn btn-secondary mx-2 mt-3" onclick="pilihKembali()">Kembali</button>
+        </div>
     </div>
-    <div id="hasil-container" class="hasil-opsi d-flex justify-content-center hidden">
-        <button class="btn btn-primary mx-2" onclick="pilihLanjut()">Lanjut</button>
-        <button class="btn btn-secondary mx-2" onclick="pilihKembali()">Kembali</button>
-    </div>
-</div>
+</body>
 </html>
