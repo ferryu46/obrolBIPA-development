@@ -203,6 +203,6 @@ function pilihLanjut() {
 }
 
 function pilihKembali() {
-    window.location.reload();
+    location.reload();
 }
 
