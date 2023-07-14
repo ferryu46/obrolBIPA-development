@@ -73,6 +73,12 @@ const config = {
         "India-BIPA 4": "https://classroom.google.com/c/NTU0NDU5OTA1NzU4",
         "India-BIPA 5": "https://classroom.google.com/c/NTU0NDU5NjQ2MzAx",
         "India-BIPA 6": "https://classroom.google.com/c/NTU0NDU5NzkxMjAw",
+        "Italia-BIPA 1": "https://classroom.google.com/c/NjMzMjczNzg3ODQ0",
+        "Italia-BIPA 2": "https://classroom.google.com/c/NjE2MDgwMDU2OTA3",
+        "Italia-BIPA 3": "https://classroom.google.com/c/NjE2MDgwMDcwOTQy",
+        "Italia-BIPA 4": "https://classroom.google.com/c/NjE2MDgwMDQwMTU3",
+        "Italia-BIPA 5": "https://classroom.google.com/c/NjE2MDgwMDQ1OTg1",
+        "Italia-BIPA 6": "https://classroom.google.com/c/NjE2MDgwMDc1Mzc5",
         "Jerman-BIPA 1": "https://classroom.google.com/c/NTU0NDU2NjcxOTg1",
         "Jerman-BIPA 2": "https://classroom.google.com/c/NjE1MjQ4MjgyMjc0",
         "Jerman-BIPA 3": "https://classroom.google.com/c/NTU0NDU5NjU5NDYz",
@@ -132,7 +138,13 @@ const config = {
         "Turki-BIPA 3": "https://classroom.google.com/c/NTU0NDU5NjU5NTE1",
         "Turki-BIPA 4": "https://classroom.google.com/c/NTU0NDU5NjQ4MzM4",
         "Turki-BIPA 5": "https://classroom.google.com/c/NjE1MjQ4MjgyMzcz",
-        "Turki-BIPA 6": "https://classroom.google.com/c/NjE1MjUwMzMwOTYy"
+        "Turki-BIPA 6": "https://classroom.google.com/c/NjE1MjUwMzMwOTYy",
+        "Uzbekistan-BIPA 1": "https://classroom.google.com/c/NjE2MDgwMDcyNjYy",
+        "Uzbekistan-BIPA 2": "https://classroom.google.com/c/NjE2MDgwMDYxNTg4",
+        "Uzbekistan-BIPA 3": "https://classroom.google.com/c/NjE2MDgwMDc1Mzkx",
+        "Uzbekistan-BIPA 4": "https://classroom.google.com/c/NjE2MDgwMDU2OTMz",
+        "Uzbekistan-BIPA 5": "https://classroom.google.com/c/NjE2MDgwMDUwMDg4",
+        "Uzbekistan-BIPA 6": "https://classroom.google.com/c/NjE2MDc3MjI3OTAz"
         
         // Tambahkan pasangan kunci-nilai sesuai negara dan tingkat BIPA yang lain jika dibutuhkan
       }
