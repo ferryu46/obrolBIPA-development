@@ -26,9 +26,8 @@
     if (index !== -1) {
       url = url.substring(0, index);
     }
+    window.history.replaceState(null, null, url);
 </script>
-
-<!-- window.history.replaceState(null, null, url); -->
 
 <script type="text/javascript" src="./js/bincang2.js"></script>
     <!-- Bootstrap -->
@@ -180,12 +179,14 @@
         <div class="flag-title font-weight-bolder">India</div>
         </div>
         </div>
+    <!--
     <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Italia" onclick="toggle(event)">
         <img id="India" class="flag" src="https://flagcdn.com/64x48/it.png" alt="Italia">
         <div class="flag-title font-weight-bolder">Italia</div>
         </div>
         </div>
+    -->
     <!--Country Card 12-->
     <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Jerman" onclick="toggle(event)">
@@ -206,7 +207,13 @@
         <img id="Kanada" class="flag" src="https://flagcdn.com/64x48/ca.png" alt="Kanada">
         <div class="flag-title font-weight-bolder">Kanada</div>
         </div>
+    </div>
+    <div class="col-lg-2 col-md-6 col-sm-12">
+        <div class="country-card" id="Korea Selatan" onclick="toggle(event)">
+        <img id="Korea Selatan" class="flag" src="https://flagcdn.com/64x48/kr.png" alt="Korea Selatan">
+        <div class="flag-title font-weight-bolder">Korea Selatan</div>
         </div>
+    </div>
     <!--Country Card 15-->
     <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Laos" onclick="toggle(event)">
