@@ -58,7 +58,6 @@ h6 {
     transform: scale(1.5);
   }
 
-/* Animasi saat hover melintas pada card yang ingin dipilih pemelajar */
 .country-card.selected {
     transform: scale(1.5);
     z-index: 2;
@@ -100,6 +99,17 @@ h6 {
     position: fixed;
     left: 18%;
     }
+
+@media screen and (max-width: 375px) {
+.hidden {display: none};
+#flag-content {display: none; opacity:0;};
+#flag-content:not(.hidden) {
+  display: flex;
+  flex-direction: column;
+
+
+};
+}
 
 .contents-wrapper {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -284,6 +294,23 @@ h6 {
   }
 }
 
+@media (max-width: 375px) {
+  #header .text-logo {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 414px) {
+  #header .text-logo {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  #header .logo img {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -402,6 +429,7 @@ h6 {
 }
 
 /* Mobile Navigation */
+@media (max-width: 376px) {
 .mobile-nav-toggle {
   position: fixed;
   top: 17px;
@@ -508,8 +536,8 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
+  }
 }
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

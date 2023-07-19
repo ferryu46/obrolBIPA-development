@@ -30,6 +30,7 @@
 </script>
 
 <script type="text/javascript" src="./js/bincang2.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -39,11 +40,14 @@
 </head>
 
 <body background="./images/bg_modul.png">
-<div class="container-fluid">
+    <button type="button" class="mobile-nav-toggle d-lg-none">
+        <i class="icofont-navigation-menu"></i>
+    </button>
+<div class="container-fluid" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
     <!-- ======= Header ======= -->
       
-      <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center" style="vertical-align: middle; min-width: 200px; z-index: -1;">
+      <header id="header" class="container-fluid fixed-top">
+        <div class="container d-flex align-items-center mobile-nav" style="vertical-align: middle; min-width: 200px; z-index: -1;">
           <!--<h1 class="logo mr-auto"><img src="images/logo_tut.png" ></h1>-->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="index.html" class="logo mr-auto">
@@ -52,7 +56,7 @@
                   <img src="images/logo_tut.png" alt class="iconDetails d-none d-lg-block" />
                   <img src="images/logo_tut.png" alt class="iconDetails d-flex d-lg-none" style="width: 90%; height: auto" />
                 </div>
-                <div style="margin-left: 35px; font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left: 10px; text-align: left">Kementerian<br />Pendidikan, Kebudayaan, <br />Riset, dan Teknologi</div>
+                <div class="text-logo" style="margin-left: 2px; font-size: 12px; color: #5e5e5e; padding-top: 20px; padding-left: 10px; text-align: left">Kementerian<br />Pendidikan, Kebudayaan, <br />Riset, dan Teknologi</div>
             </div>
           </a>
           <nav class="nav-menu d-none d-block">
@@ -94,7 +98,7 @@
         <div class="font-weight-bolder" style="margin-top: 120px; height: 20px; padding-top:10px; text-align:center; align-content: center; font-weight: bolder; position: relative;">Pilih Negara dan Tingkat BIPA Anda</div>
     </div>
 </div>
-<div id="negara" class="row mt-4 ml-5">
+<div id="negara" class="container-fluid row mt-4 ml-5">
     <!--Country Card 0-->
     <div class="col-lg-2 col-md-6 col-sm-12">
     <div class="country-card" id="Global" onclick="toggle(event)">
@@ -179,14 +183,14 @@
         <div class="flag-title font-weight-bolder">India</div>
         </div>
         </div>
-    <!--
+    
     <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Italia" onclick="toggle(event)">
         <img id="India" class="flag" src="https://flagcdn.com/64x48/it.png" alt="Italia">
         <div class="flag-title font-weight-bolder">Italia</div>
         </div>
         </div>
-    -->
+    
     <!--Country Card 12-->
     <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Jerman" onclick="toggle(event)">
@@ -263,14 +267,14 @@
         <div class="flag-title font-weight-bolder">Turki</div>
         </div>
         </div>
-    <div class="col-lg-2 col-md-6 col-sm-12">
+    <!-- <div class="col-lg-2 col-md-6 col-sm-12">
         <div class="country-card" id="Uzbekistan" onclick="toggle(event)">
         <img id="Uzbekistan" class="flag" src="https://flagcdn.com/64x48/uz.png" alt="Uzbekistan">
         <div class="flag-title font-weight-bolder">Uzbekistan</div>
         </div>
-        </div>
+        </div> -->
     </div>
-    <div id="flag-content" class="row hidden">
+    <div id="flag-content" class="container-fluid row hidden">
       <div class="contents-wrapper">
           <div class="card-content text-danger" id="BIPA 1" onclick="toggleRuang(event)">
               BIPA 1
@@ -302,7 +306,7 @@
           </div>
       </div>
   </div>
-  <div id="ruang-content" class="align-center col-md-3 hidden">
+  <div id="ruang-content" class="container-fluid align-center col-md-3 hidden">
     <div class="font-weight-bolder mb-3"> Anda memilih Ruang: </div>
         <div class="mt-4 mb-3">
             <div id="negara-value" class="ruang-content text-danger font-weight-bolder hidden"></div>
@@ -313,5 +317,15 @@
             <button class="btn btn-secondary mx-2 mt-3" onclick="pilihKembali()">Kembali</button>
         </div>
     </div>
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <footer class="container-fluid cukud-responsive bg-light text-dark text-center pb-2"> 
+        <p class="brand font-weight-bolder">Ruang Bincang BIPA</p> 
+        <p>© Dikembangkan dari hati oleh <a href="https://www.linkedin.com/in/ferry-yun-kurniawan-20bb5216b/" class="text-danger fw-bold">Ferry Yun Kurniawan, Andi Maytendri Matutu, dan Mela Apriana</a> </p> 
+    </div> 
+</footer>
+<style> 
+.cukud-responsive { position: fixed; margin: top 75% ; left: 0; bottom: 0; width: 100%; } 
+@media (min-width: 576px) { .cukud-responsive { position: fixed; display:flex; width:100vw; justify-content:center; align-items:center } } </style>
+</body>
 </body>
 </html>
