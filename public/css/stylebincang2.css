@@ -101,14 +101,19 @@ h6 {
     }
 
 @media screen and (max-width: 375px) {
-.hidden {display: none};
-#flag-content {display: none; opacity:0;};
-#flag-content:not(.hidden) {
-  display: flex;
-  flex-direction: column;
-
-
-};
+.hidden {display: none;}
+#flag-content .contents-wrapper {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#flag-content .contents-wrapper:not(.hidden) {
+  width: calc(50% - 10px);
+  margin-bottom: 10px;
+}
+#flag-content .contents-wrapper:not(.hidden):nth-child(2n + 1){
+  width: 100%;
+}
 }
 
 .contents-wrapper {
