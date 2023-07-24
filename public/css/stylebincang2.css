@@ -71,7 +71,7 @@ h6 {
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 25%;
     margin-bottom: 10px;
   }
 
@@ -100,22 +100,6 @@ h6 {
     left: 18%;
     }
 
-@media screen and (max-width: 375px) {
-.hidden {display: none;}
-#flag-content .contents-wrapper {
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-#flag-content .contents-wrapper:not(.hidden) {
-  width: calc(50% - 10px);
-  margin-bottom: 10px;
-}
-#flag-content .contents-wrapper:not(.hidden):nth-child(2n + 1){
-  width: 100%;
-}
-}
-
 .contents-wrapper {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
@@ -142,7 +126,7 @@ h6 {
 #ruang-content:not(.hidden) {
   max-width: 350px;
   max-height: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
   transition: transform 0.5s ease;
   animation: scale-in 0.5s ease;
@@ -168,10 +152,9 @@ h6 {
 #ruang-content:not(.hidden) .ruang-content {
   align-self: center;
 }
-
-        #ruang-content .btn {
-            margin-top: auto;
-        }
+#ruang-content .btn {
+  margin-top: auto;
+}
 
 .hidden {
     display: none;
