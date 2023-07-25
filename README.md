@@ -1,4 +1,4 @@
-![index](https://github.com/ferryu46/obrolBIPA-development/assets/92605921/254fa778-0e17-47b2-8f52-39df2176a66a)
+![index](https://github.com/ferryu46/obrolBIPA-development/assets/92605921/c3868ec2-7657-4a80-8255-d96e3d117021)
 
 # Ruang Bincang BIPA
 ## Deskripsi
